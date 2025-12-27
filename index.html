@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイブックマーク</title>
+    <link rel="stylesheet" href="book.css" type="text/css">
+    <link rel="icon" href="book.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#121212">
+</head>
+<body>
+    <section>
+        <h2 id="secretTrigger">ここにリンクを入力</h2>
+        
+        <input type="text" id="title"placeholder="サイト名">
+        <input type="url" id="url"placeholder="URL">
+        <button id="addBtn">追加</button>
+        <input type="text" id="newCategory" placeholder="新しいカテゴリ">
+        <button id="addCategoryBtn">カテゴリ追加</button>
+        <select id="filterSelect"></select>
+
+    </section>
+    
+    <section>
+        <h2>カテゴリ一覧</h2>
+        <ul id="categoryList"></ul>
+        <h2>リンク一覧</h2>
+        <ul id="linkList"></ul>
+    </section>
+
+    <section id="secretArea" style="display:none;">
+        <a href="secret.html">シークレットページ</a>
+    </section>
+
+    <script src="book.js"></script>
+</body>
